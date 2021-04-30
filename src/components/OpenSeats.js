@@ -12,7 +12,7 @@ class OpenSeats extends Component{
     }
     componentDidMount() {
        
-        axios.get(`http://localhost:3000/api/SeatDetails/openSeats`)
+        axios.get(`https://mern-bus-ticket-booking-system.herokuapp.com/api/SeatDetails/openSeats`)
           .then(res => {
             const seat = res.data;
             this.setState({ seats : seat });

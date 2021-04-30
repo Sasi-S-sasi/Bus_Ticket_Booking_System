@@ -56,7 +56,7 @@ export default class OpenSeats extends React.Component{
             seatNumbers : this.state.seatNumbers
         }
         console.log(user);
-        axios.post('http://localhost:5000/api/bookingdetails/add', {user}).then(res =>{
+        axios.post('https://mern-bus-ticket-booking-system.herokuapp.com/api/bookingdetails/add', {user}).then(res =>{
             alert('Your Ticket is booked successfully')
             console.log(res.data);
         });
